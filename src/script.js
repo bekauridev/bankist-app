@@ -283,12 +283,12 @@ const displayError = function (message, success = false) {
   });
 
   // Automatically remove the error
-  // delay(5000).then(() => {
-  //   if (currentError) {
-  //     currentError.remove();
-  //     currentError = null;
-  //   }
-  // });
+  delay(5000).then(() => {
+    if (currentError) {
+      currentError.remove();
+      currentError = null;
+    }
+  });
 };
 
 ///////////////////////////////////////
