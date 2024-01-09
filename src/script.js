@@ -354,6 +354,8 @@ btnLogin.addEventListener('click', function (e) {
   } catch (err) {
     displayError(err);
     tooltipIcon.style.backgroundColor = `#ff585f`;
+    inputLoginUsername.value = inputLoginPin.value = '';
+    inputLoginUsername.focus();
   }
 });
 
